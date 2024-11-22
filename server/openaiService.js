@@ -11,7 +11,7 @@ try {
 } catch (error) {
     console.error("API key file not found. Assuming this is dev mode");
 }
-const isDev = !apiKey;
+const isDemo = !apiKey;
 
 // Creates an OpenAI connection using the provided api key
 const openai = new OpenAI({
@@ -30,7 +30,7 @@ const getGPTSummarizeResponse = async (message, context, vocabLevel) => await op
     messages: [
         {
             "role": "user",
-            "content": "Summarize this given user message in a neutral and concise manner, but still contains good amount of detail. Use bullet points and headings."
+            "content": "Summarize this given user message in a neutral and concise manner, but still contains good amount of detail."
         },
         {
             "role": "user",
@@ -48,4 +48,4 @@ const getGPTSummarizeResponse = async (message, context, vocabLevel) => await op
 });
 
 
-export {getGPTSummarizeResponse, isDev};
+export {getGPTSummarizeResponse, isDemo};

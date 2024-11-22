@@ -35,7 +35,7 @@ const Typerwriter: FC<TypewriterProps> = ({value, speed}) => {
     }, [value, speed]);
 
     return (
-        <div className="custom-textbox" style={{width: "100%"}}>{displayText}</div>
+        <div className="custom-textbox" style={{width: "100%"}}><p>{displayText}</p></div>
     );
 };
 

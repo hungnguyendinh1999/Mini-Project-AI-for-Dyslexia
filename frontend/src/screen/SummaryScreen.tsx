@@ -27,10 +27,10 @@ const harmContext =
     "If the input text contains harmful, illegal, or offensive content, respond with 'Content not allowed.' and give a 1-sentence explanation.";
 
     const predefinedBackgroundColors = [
+        "#FFE8D6",
         "#A8DADC",
         "#F4A261",
         "#457B9D",
-        "#FFE8D6",
         "#1D3557",
         "#FFFFFF",
         "#000000",
@@ -238,7 +238,8 @@ const SummaryScreen: FC = () => {
                                 ) : errorMessage ? (
                                     <p className="error">{errorMessage}</p>
                                 ) : (
-                                    <Typewriter value={summary} speed={4} />
+                                    // <Typewriter value={summary} speed={4} />
+                                    <Typewriter value={summary} speed={10} />
                                 )}
                             </div>
                         </div>
@@ -290,7 +291,7 @@ const SummaryScreen: FC = () => {
                 </p>
                 <p>
                     If you want to REPORT any incorrectness or inappropriate content generated, please access{" "}
-                    <a target="_blank" href="https://forms.gle/p7qu8RFtKRhKPDGr7">
+                    <a target="_blank" href="https://forms.gle/D7VPst44PpmitHsr5">
                         Report Inaccurate Summary Form
                     </a>
                     .{" "}
