@@ -1,6 +1,8 @@
 # Mini-Project: AI for Disability
 ## Summarization tool
 
+The demo can be found here: [Mini-Project: AI for Disability - Demo](https://youtu.be/jqUHPhdGc_s)
+
 ### Installation
 - For dependencies for both frontend and server directory, run `npm i`
 - For server specifically, also run `npm install -g nodemon`
