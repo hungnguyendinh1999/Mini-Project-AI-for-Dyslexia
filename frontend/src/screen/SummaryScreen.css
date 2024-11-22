@@ -1,0 +1,135 @@
+#summary-screen {
+    height: 100vh;
+    /* width: 100%; */
+    overflow-x: hidden;
+
+}
+
+.row-container {
+    display: flex;
+    height: 100%;
+    width: 100dvw;
+    justify-content: center; /* Adjust spacing between children as needed */
+    align-items: center; /* Align items vertically */
+}
+
+.additional-div {
+    /* width: 10%; */
+    /* height: 30%; */
+    padding: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    border-radius: 18px; /* Optional rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content */
+    flex-direction: column;
+}
+
+.flex-box {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: height 0.8s ease, min-height 0.5s ease, padding 0.5s ease; /* Added padding transition */
+    min-height: 150px; /* Default min height */
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-margin-10 {
+    margin-top: 10px;
+}
+
+#summary-input-container {
+    border-radius: 18px; /* Rounded corners */
+    background-color: var(--textbox-background-color); /* Subtle background color */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 90%; /* Adjust as needed */
+    height: 90%;
+    margin-top: 10px;
+    /* Animation */
+    min-height: 150px; /* Default min height */
+    transition: height 0.3s ease;
+}
+
+#smaller-container {
+    height: 90%;
+    width: 100%;
+    /* overflow: scroll; */
+    padding: 15px;
+}
+
+.center-text {
+    text-align: center;
+    margin: auto; /* make it center */
+}
+
+#summary-title {
+    font-family: sans-serif;
+}
+
+#summary-textbox-container {
+    width: 100%;
+    height: 90%;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#summary-button-group.hidden {
+    opacity: 0; /* Fades out */
+    max-height: 0; /* Collapses height */
+    pointer-events: none;
+    visibility: hidden;
+}
+
+#summary-output-container {
+    border-radius: 18px; /* Rounded corners */
+    background-color: var(--textbox-background-color);
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 90%; /* Adjust as needed */
+    height: 80%;
+    margin-top: 10px;
+    transition: width 0.3s ease;
+}
+
+#summary-title-wrapper {
+    /* height: 10%; */
+    display: flex;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--main-black);
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+#summary-title {
+    color: var(--main-white);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hide-caret {
+    caret-color: transparent;
+}
+
+.disable-selection {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: 0;
+}
